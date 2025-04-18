@@ -1,17 +1,3 @@
-/* 
-Colour scheme:
-  - main light: #F4F5F5
-  - main dark: #2B2430
-  - grey beige: #827E72
-  - blue grey: #9EA5A3
-  - orange beige: #7C7064
-*/
-
-/* 
-rem for fonts
-em for padding and other things like that 
-*/
-
 /* CSS Reset */
 * {
     margin: 0;
@@ -19,27 +5,27 @@ em for padding and other things like that
     box-sizing: border-box;
   }
 
-/* the full site config */
+/* Full site defaults */
 html {
   font-family: 'Courier New', Courier, monospace;
   background-color: #F4F5F5;
   color: #2B2430;
 }
 
+/* Setting up the main body container (whole site sits in here) */
 body {
   min-height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 9em auto; 
+  grid-template-rows: auto auto; 
 }
-
 
 /* The header box */
 header{
   background-color:#9EA5A3;
   font-family: fantasy;
   color: #2B2430;
-  height: 100%;
+  /* height: 100%; */
   padding: 2em;
 }
 
@@ -50,13 +36,7 @@ h1 {
 /* The container which holds the sidebar and main content */
 .main-container {
   display: grid;
-  grid-template-columns: 200px auto;
-  min-height: 100%;
-}
-
-.side {
-  background-color: #827E72;
-  padding: 2em;
+  grid-template-columns: auto auto;
 }
 
 /* The side navigation menu */
@@ -72,30 +52,31 @@ h1 {
   color: #F4F5F5;
   font-size: 1.2rem;
   padding: 1em;
+  /* padding-right: 3em; */
   text-decoration: none;
   font-family:'Courier New', Courier, monospace;
-  width: 100%;
+  width: 10em;
 }
 
 /* Active/current link */
 .sidebar a.active {
   background-color: #7C7064;
-  color: #F4F5F5;
+  width: 100%;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #7C7064;
+  width: 100%;
 }
 
 /* Style page content */
 main {
-  padding: 20px 20px;
+  padding: 2%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1;
 }
 
 .bodyheader {
@@ -104,10 +85,15 @@ main {
 
 h3 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: bolder;
+  padding-bottom: 0.5em;
 }
 
 iframe {
   width: 100%;
   height: 90vh;
+}
+
+footer {
+  padding-top: 1em;
 }
