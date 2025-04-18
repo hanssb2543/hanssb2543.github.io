@@ -36,7 +36,7 @@ h1 {
 /* The container which holds the sidebar and main content */
 .main-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 200px auto;
 }
 
 /* The side navigation menu */
@@ -55,7 +55,7 @@ h1 {
   /* padding-right: 3em; */
   text-decoration: none;
   font-family:'Courier New', Courier, monospace;
-  width: 10em;
+  width: 100%;
 }
 
 /* Active/current link */
