@@ -26,50 +26,44 @@ html {
   color: #2B2430;
 }
 
-
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} 
+  width: 100%;
+  display: grid;
+  grid-template-rows: 9em auto; 
+}
+
 
 /* The header box */
 header{
   background-color:#9EA5A3;
   font-family: fantasy;
-  font-weight: bolder;
   color: #2B2430;
-  height: 12em;
+  height: 100%;
   padding: 2em;
 }
 
-/* The header text */
-h1{
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
+h1 {
+  font-size: 200%;
 }
 
 /* The container which holds the sidebar and main content */
 .main-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px auto;
+  min-height: 100%;
 }
 
 .side {
   background-color: #827E72;
-  min-height: 100vh;
   padding: 2em;
 }
 
 /* The side navigation menu */
 .sidebar {
-  width: 200px;
+  width: 100%;
   background-color: #827E72;
   height: 100%;
-  overflow: auto;
-  min-height: 100vh
 }
 
 /* Sidebar links */
@@ -77,11 +71,10 @@ h2 {
   display: block;
   color: #F4F5F5;
   font-size: 1.2rem;
-  font-weight: bolder;
   padding: 1em;
   text-decoration: none;
   font-family:'Courier New', Courier, monospace;
-  width: 200px;
+  width: 100%;
 }
 
 /* Active/current link */
@@ -93,20 +86,28 @@ h2 {
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #7C7064;
-  color: 2B2430;
 }
 
 /* Style page content */
 main {
   padding: 20px 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .bodyheader {
   padding: 1em;
 }
 
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 iframe {
   width: 100%;
-  height: 90%;
+  height: 90vh;
 }
