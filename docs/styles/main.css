@@ -1,83 +1,112 @@
+/* 
+Colour scheme:
+  - main light: #F4F5F5
+  - main dark: #2B2430
+  - grey beige: #827E72
+  - blue grey: #9EA5A3
+  - orange beige: #7C7064
+*/
+
+/* 
+rem for fonts
+em for padding and other things like that 
+*/
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 /* the full site config */
 html {
-  font-family: fantasy;
-  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #F4F5F5;
+  color: #2B2430;
 }
 
-/* The overall site body */
-body{
-  margin: 0;
-}
 
-/* The container which holds everything in the body */
-.container {
-  outline:black 1px solid; 
-  height: 100%;
-  width: 100%;
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} 
 
 /* The header box */
 header{
-  margin: 0;
-  background-color: rgb(6, 55, 31);
-  width: 100%;
-  height: 5em;
+  background-color:#9EA5A3;
+  font-family: fantasy;
+  font-weight: bolder;
+  color: #2B2430;
+  height: 12em;
   padding: 2em;
 }
 
 /* The header text */
 h1{
-  color: white;
-  font-size: 200%;
+  font-size: 3rem;
 }
 
-.side {
-  background-color: black;
-  min-height: 100vh;
+h2 {
+  font-size: 2rem;
 }
 
 /* The container which holds the sidebar and main content */
 .main-container {
   display: flex;
-  padding: 2px;
+}
+
+.side {
+  background-color: #827E72;
+  min-height: 100vh;
+  padding: 2em;
 }
 
 /* The side navigation menu */
 .sidebar {
-  padding-right: 2px;
   width: 200px;
-  background-color: black;
+  background-color: #827E72;
   height: 100%;
   overflow: auto;
+  min-height: 100vh
 }
 
 /* Sidebar links */
 .sidebar a {
   display: block;
-  color: white;
-  padding: 16px;
+  color: #F4F5F5;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1em;
   text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
+  width: 200px;
 }
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: rgb(6, 55, 31);
-  color: white;
+  background-color: #7C7064;
+  color: #F4F5F5;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: black;
+  background-color: #7C7064;
+  color: 2B2430;
 }
 
 /* Style page content */
 main {
-  background-color: grey;
   padding: 20px 20px;
-  height: 100%;
   width: 100%;
-  min-height: 100vh;
+}
+
+.bodyheader {
+  padding: 1em;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
 }
