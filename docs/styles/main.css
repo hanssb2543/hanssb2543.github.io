@@ -99,6 +99,6 @@ footer {
   padding: 1em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .sidebar {display: none;}
 }
