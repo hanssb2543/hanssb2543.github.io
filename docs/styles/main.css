@@ -99,11 +99,30 @@ footer {
   padding: 1em;
 }
 
-/* @media screen and (max-width: 786px) {
+.collapse {
+  background-color: #827E72;
+  color: #F4F5F5;
+  /* font-family: 'Courier New', Courier, monospace; */
+  margin: 5px;
+  width: 90%;
+  padding: 1em;
+  font-size: 1.2rem;
+  border: 0;
+}
 
-  .sidebar {
-    display:none;
+.collapse:hover {
+  background-color: #7C7064;
+}
 
-  }
+.open_sb {
+  width: 40px;
+  height: 40px;
+  background-color: #827E72;
+  color: #F4F5F5;
+  border: 0;
+  border-radius: 15%;
+}
 
-  } */
+.open_sb:hover {
+  background-color: #7C7064;
+}
