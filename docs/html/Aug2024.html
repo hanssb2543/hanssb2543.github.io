@@ -14,7 +14,8 @@
             <h2>A LockNation Newsletter</h2>
         </header>
         <div class="main-container">
-            <div class="sidebar">
+            <div class="sidebar" id="mySidebar">
+                <button class="collapse" onclick="sb_close()"> &lt;   Hide </button>
                 <a href="..\index.html">Current</a>
                 <a href="about.html">About Us</a>
                 <a href="Jan2025.html">Jan 2025</a>
@@ -28,6 +29,7 @@
                 <a href="Apr2024.html">Apr 2024</a>
             </div>
             <main>
+                <button class="open_sb" onclick="sb_open()">&#9776;</button>
                 <div class="bodyheader">
                     <h3>August 2024</h3>
                 </div>
@@ -37,5 +39,6 @@
         <footer>
             &lt;&lt;&lt; &copy;LockNation 2025 &gt;&gt;&gt;
         </footer>
+        <script src="../scripts/main.js"></script>
     </body>
 </html>
