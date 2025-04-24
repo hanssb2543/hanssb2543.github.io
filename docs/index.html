@@ -14,7 +14,8 @@
             <h2>A LockNation Newsletter</h2>
         </header>
         <div class="main-container">
-            <div class="sidebar">
+            <div class="sidebar" id="mySidebar">
+                <button class="collapse" onclick="sb_close()"> Close &times;</button>
                 <a class="active" href="index.html">Current</a>
                 <a href="html/about.html">About</a>
                 <a href="html/Jan2025.html">Jan 2025</a>
@@ -28,6 +29,7 @@
                 <a href="html/Apr2024.html">Apr 2024</a>
             </div>
             <main>
+                <button class="open_sb" onclick="sb_open()">&#9776;</button>
                 <div class="bodyheader">
                     <h3>February and March 2025</h3>
                     <p>Welcome to our Newsletter - The Thinking Cloth Chronicle, where we celebrate exciting new events in the world of Lockwood & Co.</p>
@@ -38,5 +40,6 @@
         <footer>
             &lt;&lt;&lt; &copy;LockNation 2025 &gt;&gt;&gt;
         </footer>
+        <script src="scripts/main.js"></script>
     </body>
 </html>

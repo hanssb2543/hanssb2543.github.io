@@ -35,13 +35,13 @@ h1 {
 
 /* The container which holds the sidebar and main content */
 .main-container {
-  display: grid;
-  grid-template-columns: 200px auto;
+  display: flex;
+  flex-direction: row;
 }
 
 /* The side navigation menu */
 .sidebar {
-  width: 100%;
+  width: 200px;
   background-color: #827E72;
   height: 100%;
 }
@@ -99,6 +99,11 @@ footer {
   padding: 1em;
 }
 
-@media screen and (max-width: 786px) {
-  .sidebar {width: 1%; }
-}
+/* @media screen and (max-width: 786px) {
+
+  .sidebar {
+    display:none;
+
+  }
+
+  } */
